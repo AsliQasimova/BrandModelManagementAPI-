@@ -35,7 +35,8 @@ Built with **ASP.NET Core** and **Entity Framework Core**, the project follows *
        "DefaultConnection": "server=localhost;database=brand_db;user=YOUR_USER;password=YOUR_PASSWORD;"
    }
 3. Run migrations to create tables:
-dotnet ef database update
+    ```bash
+    dotnet ef database update
 
 ## 🗄️ Database File
 The repository also includes a sample database file in the **Database** folder:
@@ -46,11 +47,33 @@ The repository also includes a sample database file in the **Database** folder:
 1. Create a database:
    ```sql
    CREATE DATABASE phoneApp_db;
-Import the file:
+   
+2. Import the file:
 
-bash
-mysql -u root -p brand_db < 
+   ```bash
+   mysql -u root -p brand_db <
 
+## ▶️ How to Run
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/<your-username>/PhoneAppAPI.git
+
+2. Navigate into the project folder:
+
+   ```bash
+   cd PhoneAppAPI
+
+3. Run the application:
+
+   ```bash
+   dotnet run
+   
+4. Open Swagger UI at:
+   ```Code
+   https://localhost:5001/swagger
+   
 ## 📂 Project Structure
 - **Abstractions** → Interfaces (IBrandService, IModelService, IFeatureService)  
 - **Controllers** → API endpoints  
