@@ -28,7 +28,7 @@ Built with **ASP.NET Core** and **Entity Framework Core**, the project follows *
 ---
 
 ## ⚙️ Database Setup
-1. Create a database (e.g., `brand_db`) in MySQL.
+1. Create a database (e.g., `brand_db`) in MySQL.  
 2. Add your connection string in `appsettings.json`:
    ```json
    "ConnectionStrings": {
@@ -55,6 +55,8 @@ Open Swagger UI at:
 
 Code
 https://localhost:5001/swagger
+Code
+
 
 ## 📂 Project Structure
 - **Abstractions** → Interfaces (IBrandService, IModelService, IFeatureService)  
