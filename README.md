@@ -34,25 +34,23 @@ Built with **ASP.NET Core** and **Entity Framework Core**, the project follows *
    "ConnectionStrings": {
        "DefaultConnection": "server=localhost;database=brand_db;user=YOUR_USER;password=YOUR_PASSWORD;"
    }
-Run migrations to create tables:
-
-bash
+3. Run migrations to create tables:
 dotnet ef database update
-▶️ How to Run
-Clone the repository:
 
+## ▶️ How to Run
+1. Clone the repository:
 bash
 git clone https://github.com/<your-username>/PhoneAppAPI.git
-Navigate into the project folder:
 
+2. Navigate into the project folder:
 bash
 cd PhoneAppAPI
-Run the application:
 
+3. Run the application:
 bash
 dotnet run
-Open Swagger UI at:
 
+4. Open Swagger UI at:
 Code
 https://localhost:5001/swagger
 Code
