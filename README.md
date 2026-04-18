@@ -37,24 +37,19 @@ Built with **ASP.NET Core** and **Entity Framework Core**, the project follows *
 3. Run migrations to create tables:
 dotnet ef database update
 
-## ▶️ How to Run
-1. Clone the repository:
+## 🗄️ Database File
+The repository also includes a sample database file in the **Database** folder:
+
+- `phoneApp_db.sql` → Contains schema and sample data.
+
+### How to Import
+1. Create a database:
+   ```sql
+   CREATE DATABASE phoneApp_db;
+Import the file:
+
 bash
-git clone https://github.com/<your-username>/PhoneAppAPI.git
-
-2. Navigate into the project folder:
-bash
-cd PhoneAppAPI
-
-3. Run the application:
-bash
-dotnet run
-
-4. Open Swagger UI at:
-Code
-https://localhost:5001/swagger
-Code
-
+mysql -u root -p brand_db < 
 
 ## 📂 Project Structure
 - **Abstractions** → Interfaces (IBrandService, IModelService, IFeatureService)  
