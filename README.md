@@ -55,36 +55,34 @@ Open Swagger UI at:
 
 Code
 https://localhost:5001/swagger
-📂 Project Structure
-Abstractions → Interfaces (IBrandService, IModelService, IFeatureService)
 
-Controllers → API endpoints
+## 📂 Project Structure
+- **Abstractions** → Interfaces (IBrandService, IModelService, IFeatureService)  
+- **Controllers** → API endpoints  
+- **Data** → DbContext (PhoneDbContext)  
+- **Entities** → Database entities (Brand, Model, Feature, Sales, PriceHistory, StockMovement)  
+- **Models** → DTOs (BrandDTO, ModelDTO, FeatureDTO, etc.)  
+- **Services** → Business logic (BrandService, ModelService, FeatureService)  
+- **Migrations** → EF Core migration files  
 
-Data → DbContext (PhoneDbContext)
+---
 
-Entities → Database entities (Brand, Model, Feature, Sales, PriceHistory, StockMovement)
+## 🧪 Testing
+- Unit tests for services and business logic  
+- Integration tests for API endpoints  
+- Swagger UI for manual testing and API exploration  
 
-Models → DTOs (BrandDTO, ModelDTO, FeatureDTO, etc.)
+---
 
-Services → Business logic (BrandService, ModelService, FeatureService)
+## 📌 Notes
+- Keep your **connection string private** (add `appsettings.json` to `.gitignore`).  
+- Use README.md to guide others on how to set up and run the project.  
+- Future improvements: Authentication (JWT), Role-based Authorization, CI/CD pipeline integration.  
 
-Migrations → EF Core migration files
+---
 
-🧪 Testing
-Unit tests for services and business logic
+## 👤 Author
+Developed by **Aslı Qasımova**  
+📧 Contact: [asligasimova21@gmail.com]  
+🌐 GitHub: [[https://github.com/<your-username>]](https://github.com/AsliQasimova)
 
-Integration tests for API endpoints
-
-Swagger UI for manual testing and API exploration
-
-📌 Notes
-Keep your connection string private (add appsettings.json to .gitignore).
-
-Use README.md to guide others on how to set up and run the project.
-
-Future improvements: Authentication (JWT), Role-based Authorization, CI/CD pipeline integration.
-
-👤 Author
-Developed by Aslı Qasımova  
-📧 Contact: [asligasimova21@gmail.com]
-🌐 GitHub: [https://github.com/<your-username>](https://github.com/AsliQasimova)
